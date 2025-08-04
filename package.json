@@ -1,0 +1,16 @@
+{
+  "name": "kontak-hono-api",
+  "scripts": {
+    "dev": "bun run --hot src/index.ts"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.13.0",
+    "hono": "^4.8.3",
+    "winston": "^3.17.0",
+    "zod": "^3.25.71"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "prisma": "^6.13.0"
+  }
+}
