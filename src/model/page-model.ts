@@ -4,7 +4,7 @@ export type Paging = {
   size: number;
 };
 
-export type Pageable<T> {
+export type Pageable<T> = {
   data: Array<T>;
-  paging: Paging
-}
+  paging: Paging;
+};
