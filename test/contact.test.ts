@@ -441,7 +441,6 @@ describe("GET /api/contacts", () => {
     });
 
     body = await response.json();
-    //coba git credential
 
     expect(response.status).toBe(200);
     expect(body.data.length).toBe(0);
