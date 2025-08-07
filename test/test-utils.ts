@@ -45,6 +45,12 @@ export class ContactTest {
     });
   }
 
+  static async createMany(n: number) {
+    for (let i = 0; i < n; i++) {
+      await this.create();
+    }
+  }
+
   static async get(): Promise<Contact> {
     return prismaClient.contact.findFirstOrThrow({
       where: {

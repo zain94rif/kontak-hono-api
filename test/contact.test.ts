@@ -260,3 +260,27 @@ describe("DELETE /api/contacts/:id", () => {
     expect(body.data).toBeTrue();
   });
 });
+
+describe("GET /api/contacts", () => {
+  beforeEach(async () => {
+    await ContactTest.deleteAll();
+    await UserTest.create();
+    await ContactTest.createMany(20);
+  });
+  afterEach(async () => {
+    await ContactTest.deleteAll();
+    await UserTest.delete();
+  });
+
+  it("should be able to search contact", async () => {});
+
+  it("should be able to search contact using name", async () => {});
+
+  it("should be able to search contact using email", async () => {});
+
+  it("should be able to search contact using phone", async () => {});
+
+  it("should be able to search without result", async () => {});
+
+  it("should be able to search with paging", async () => {});
+});
