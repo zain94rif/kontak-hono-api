@@ -441,7 +441,6 @@ describe("GET /api/contacts", () => {
     });
 
     body = await response.json();
-    //hasil
 
     expect(response.status).toBe(200);
     expect(body.data.length).toBe(0);
