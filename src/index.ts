@@ -3,6 +3,7 @@ import { HTTPException } from "hono/http-exception";
 import { ZodError } from "zod";
 import { userController } from "./controller/user-controller";
 import { contactController } from "./controller/contact-controller";
+import { addressController } from "./controller/address-controller";
 
 const app = new Hono();
 
@@ -12,6 +13,7 @@ app.get("/", (c) => {
 
 app.route("/", userController);
 app.route("/", contactController);
+app.route("/", addressController);
 
 app.onError(async (err, c) => {
   // console.log(err);

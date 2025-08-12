@@ -5,7 +5,7 @@ export type CreateAddressRequest = {
   street?: string;
   city?: string;
   province?: string;
-  county: string;
+  country: string;
   postal_code: string;
 };
 
@@ -16,6 +16,11 @@ export type AddressResponse = {
   province?: string | null;
   country: string;
   postal_code: string;
+};
+
+export type GetAddressRequest = {
+  contact_id: number;
+  id: number;
 };
 
 export function toAddressResponse(address: Address): AddressResponse {
