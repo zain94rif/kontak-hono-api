@@ -1,44 +1,68 @@
-# 🚀 Nama Proyek Anda
+# 🚀 Hono Bun Contact API
 
-Deskripsi singkat tentang apa yang dilakukan aplikasi ini. Misalnya: "API berperforma tinggi yang dibangun menggunakan Bun runtime dan framework Hono."
+**"API berperforma tinggi yang dibangun menggunakan Bun runtime dan framework Hono."**
+
+---
 
 ## 🛠️ Fitur
-- **Bun Runtime:** Eksekusi JavaScript & TypeScript yang sangat cepat.
-- **Hono Framework:** Framework web kecil, sederhana, dan super cepat.
-- **TypeScript:** Keamanan tipe data sejak awal.
-- [Tambahkan fitur lain di sini, misal: Drizzle ORM, Zod validation, dll.]
+
+* **Bun Runtime:** Eksekusi JavaScript & TypeScript yang sangat cepat.
+* **Hono Framework:** Framework web kecil, sederhana, dan super cepat.
+* **TypeScript:** Keamanan tipe data sejak awal.
+* **Prisma 6, PostgreSQL and Zod validation :**
+
+---
 
 ## 📋 Prasyarat
-Pastikan Anda sudah menginstal [Bun](https://bun.sh/) di sistem Anda.
+
+Pastikan Anda sudah menginstal **Bun** di sistem Anda.
+
 ```bash
 curl -fsSL https://bun.sh | bash
+```
+
+---
 
 ## 🚀 Cara Menjalankan Project
+
 Ikuti langkah-langkah di bawah ini untuk menyiapkan lingkungan pengembangan:
 
 ### 1. Instalasi Dependensi
-Instal semua library yang dibutuhkan menggunakan Bun:
+
 ```bash
 bun install
+```
 
 ### 2. Generate Prisma
+
 ```bash
 bunx prisma generate
+```
 
 ### 3. Migrate Database
+
 ```bash
 bunx prisma migrate dev
+```
 
 ### 4. Jalankan Test
+
 ```bash
 bun test test/user.test.ts
 bun test test/address.test.ts
 bun test test/contact.test.ts
+```
 
+### 5. Jalankan Secara Local
 
-### . Jalankan Secara Local
-Jalankan BUN Hono di Local:
+Jalankan server **Bun + Hono** di local:
+
 ```bash
 bun run dev
+```
 
-open http://localhost:3000
+Buka di browser:
+
+```
+http://localhost:3000
+```
